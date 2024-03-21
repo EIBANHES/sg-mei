@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="plugins/bootstrap-5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-5.15.3/css/all.min.css">
+    <title>SG-MEI</title>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="images/logomarca.png" alt="Logomarca SGMEI">            
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-coins"></i>
+                        <a href="caixa.html">Fluxo de Caixa</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cubes"></i>
+                        <a href="estoque.html">Estoque</a>
+                    </li>
+                    <li>
+                        <i class="far fa-file-alt"></i>
+                        <a href="relatorios.html">Relatórios</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-hard-hat"></i>
+                        <a href="funcionarios.html">Funcionários</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-users"></i>
+                        <a href="usuarios.html">Usuários</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <a href="configuracoes.html">Configurações</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"> <i class="fas fa-home"></i> Dashboard</a>
+                <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>Usuários</h2>
+                </div>
+                <div class="panel-row">
+                    <a class="panel panel-50" href="usuariosCadastrar.html" role="button">
+                        <i class="fas fa-user-plus"></i>
+                        Cadastrar Usuário
+                    </a>
+                    <a class="panel panel-50" href="usuariosVisualizar.html" role="button">
+                        <i class="fas fa-address-card"></i>
+                        Visualizar Usuários
+                    </a>
+                </div>
+                <div class="content">
+                    <form id="usuario-cadastrar">
+                        <div class="mb-3">
+                            <label for="ucnomecompleto" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="ucnomecompleto" name="nomecompleto">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="uccpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="uccpf" name="cpf">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="uctelefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="uctelefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ucdatanascimento" class="form-label">Data de nascimento</label>
+                            <input type="text" class="form-control" id="ucdatanascimento" name="datanascimento" placeholder="xx/xx/xxxx">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ucsenha" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="ucsenha" name="senha">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ucsenharepetir" class="form-label">Repetir Senha</label>
+                            <input type="password" class="form-control" id="ucsenharepetir" name="senharepetir">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="ucniveldeacesso">Nível de Acesso</label>
+                            <select class="form-control" id="ucniveldeacesso" name="nivelacesso">
+                                <option>Adminitrador</option>
+                                <option>root</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="plugins/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+    <script src="plugins/bootstrap-5.0.1/js/bootstrap.min.js"></script>
+    <script src="plugins/fontawesome-5.15.3/js/all.min.js"></script>
+</body>
+</html>

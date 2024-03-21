@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="plugins/bootstrap-5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome-5.15.3/css/all.min.css">
+    <title>SG-MEI</title>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar>
+            <div class="sidebar-title">
+                <img src="images/logomarca.png" alt="Logomarca SGMEI">            
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-coins"></i>
+                        <a href="caixa.html">Fluxo de Caixa</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cubes"></i>
+                        <a href="estoque.html">Estoque</a>
+                    </li>
+                    <li>
+                        <i class="far fa-file-alt"></i>
+                        <a href="relatorios.html">Relatórios</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-hard-hat"></i>
+                        <a href="funcionarios.html">Funcionários</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-users"></i>
+                        <a href="usuarios.html">Usuários</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <a href="configuracoes.html">Configurações</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main>
+            <header>
+                <a href="dashboard.html"> <i class="fas fa-home"></i> Dashboard</a>
+                <a href="index.html"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>Estoque</h2>
+                </div>
+                <div class="panel-row">
+                    <a class="panel panel-50" href="estoqueCadastrar.html" role="button">
+                        <i class="fas fa-plus-square"></i>
+                        Cadastrar Item
+                    </a>
+                    <a class="panel panel-50" href="estoqueVisualizar.html" role="button">
+                        <i class="fas fa-table"></i>
+                        Visualizar Estoque
+                    </a>
+                </div>
+                <div class="content">
+                    <table class="table table-striped">
+                        <thread>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col">Valor de Compra</th>
+                                <th scope="col">Valor de Venda</th>
+                                <th scope="col">Lucro Bruto</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Excluir</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>SSD 256 GB Kingston</td>
+                                    <td>10</td>
+                                    <td>R$185,00</td>
+                                    <td>R$340,00</td>
+                                    <td>85%</td>
+                                    <td><i class="fas fa-retweet"></i></td>
+                                    <td><i class="fas fa-trash-alt"></i></td>
+                                </tr>
+                            </tbody>
+                        </thread>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="plugins/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="plugins/jquery-validation/dist/localization/messages_pt_BR.min.js"></script>
+    <script src="plugins/bootstrap-5.0.1/js/bootstrap.min.js"></script>
+    <script src="plugins/fontawesome-5.15.3/js/all.min.js"></script>
+</body>
+</html>
